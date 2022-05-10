@@ -26,7 +26,12 @@ import { MdNotificationsNone, MdInfoOutline } from "react-icons/md";
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import { FaEthereum } from "react-icons/fa";
 import routes from "routes.js";
+// Contexts
+import { AuthContext } from "contexts/AuthContext";
+
 export default function HeaderLinks(props) {
+  // Auth context function
+  const { signOut } = React.useContext(AuthContext)
   const { secondary } = props;
   const { colorMode, toggleColorMode } = useColorMode();
   // Chakra Color Mode
@@ -275,7 +280,8 @@ export default function HeaderLinks(props) {
               _focus={{ bg: "none" }}
               color='red.400'
               borderRadius='8px'
-              px='14px'>
+              px='14px'
+              onClick={signOut}>
               <Text fontSize='sm'>Log out</Text>
             </MenuItem>
           </Flex>

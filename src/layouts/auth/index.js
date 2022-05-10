@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes.js";
 
@@ -7,9 +7,13 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 
 // Layout components
 import { SidebarContext } from "contexts/SidebarContext";
+// Contexts
+import { AuthContext } from 'contexts/AuthContext'
 
 // Custom Chakra theme
 export default function Auth() {
+  // Getting auth state from auth context
+  const { isSignedIn } = useContext(AuthContext)
   // states and functions
   const [toggleSidebar, setToggleSidebar] = useState(false);
   // functions for changing the states from components
@@ -39,6 +43,8 @@ export default function Auth() {
   };
   const authBg = useColorModeValue("white", "navy.900");
   document.documentElement.dir = "ltr";
+  // Redirect to admin dashboard if user is signed in
+  if (isSignedIn) return <Redirect to="/admin" />
   return (
     <Box>
       <SidebarContext.Provider
