@@ -1,4 +1,10 @@
 
+
+## [1.0.0-enh1] 2022-06-18
+### Improvements
+
+- Added `JWT Authentication`
+
 ## [1.0.0] 2022-04-28
 
 -  AppSeed Import
