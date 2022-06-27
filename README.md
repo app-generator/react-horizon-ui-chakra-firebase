@@ -10,7 +10,6 @@
 
 <p>&nbsp;</p>
 
-
 Get started and build your dream web app with Horizon UI, the most trendiest &
 innovative Open Source Admin Template for Chakra UI & React!
 
@@ -30,9 +29,9 @@ Authentication Pages, Profile and so on. Just choose between a Basic Design or a
 cover and you are good to go!
 
 ### 🎉 [NEW] Horizon UI Components
+
 All the main components from both versions, this will help you to see and interact with all & the latest added components of Horizon (also, new components are on the way, stay tuned)! ⚡️
 <a href="https://horizon-ui.com/components/?ref=readme-horizon" target="_blank">See all components</a>
-
 
 ### Documentation
 
@@ -65,6 +64,37 @@ Then run this command to start your local server
 ```bash
 npm start
 ```
+
+### Configure Firebase Credentials
+
+- Go to [Firebase Console](https://console.firebase.google.com)
+- Click on the **Add Project** button
+- Enter the name of your Project
+- Enable / Disable Google Analytics for your project and click Continue
+- Click **Create Project** Button
+
+After the project has been created, you will be automatically redirected to the project
+(Note: You may select the project from the console any time):
+
+- Select a platform (Android / iOS / Web) for which you want to create a client application for this project
+- Enter the name of your client application
+- Copy the provided configuration and paste it in your application inside `src/config/constants.js` to start using Firebase
+
+```javascript
+const firebaseConfig = {
+   apiKey: 'YOUR_API_KEY',                            # <-- YOUR DATA HERE
+   authDomain: 'YOUR_DOMAIN_HERE',                    # <-- YOUR DATA HERE
+   projectId: 'YOUR_PROJECT_ID',                      # <-- YOUR DATA HERE
+   storageBucket: 'YOUR_STORAGE_BUCKET',              # <-- YOUR DATA HERE
+   messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',     # <-- YOUR DATA HERE
+   appId: 'YOUR_APP_ID',                              # <-- YOUR DATA HERE
+};
+```
+
+For more information, feel free to access [Firebase official](https://firebase.google.com/docs) help:
+
+- [Firebase Fundamentals](https://firebase.google.com/docs/guides) - Learn how to get started fast
+- [Manage Projects in Firebase](https://firebase.google.com/docs/projects/learn-more) - the basics
 
 ### Example Pages
 
