@@ -50,7 +50,7 @@ import { RiEyeCloseLine } from 'react-icons/ri';
 // Contexts
 import { AuthContext } from 'contexts/AuthContext';
 
-function SignIn() {
+function SignUp() {
   // Chakra color mode
   const textColor = useColorModeValue('navy.700', 'white');
   const textColorSecondary = 'gray.400';
@@ -73,11 +73,11 @@ function SignIn() {
   const [password, setPassword] = React.useState('');
   const [loginError, setLoginError] = React.useState('');
   const [show, setShow] = React.useState(false);
-  const { signIn, googleSignIn } = React.useContext(AuthContext);
+  const { signUp } = React.useContext(AuthContext);
   const handleClick = () => setShow(!show);
-  const handleSignIn = async () => {
+  const handleSignUp = async () => {
     setLoginError('');
-    const error = await signIn(email, password);
+    const error = await signUp(email, password);
     if (error) setLoginError(error);
   };
   return (
@@ -97,7 +97,7 @@ function SignIn() {
       >
         <Box me="auto">
           <Heading color={textColor} fontSize="36px" mb="10px">
-            Sign In
+            Sign Up
           </Heading>
           <Text
             mb="36px"
@@ -106,7 +106,7 @@ function SignIn() {
             fontWeight="400"
             fontSize="md"
           >
-            Enter your email and password to sign in!
+            Enter your email and password to sign up!
           </Text>
         </Box>
         <Flex
@@ -120,31 +120,6 @@ function SignIn() {
           me="auto"
           mb={{ base: '20px', md: 'auto' }}
         >
-          <Button
-            fontSize="sm"
-            me="0px"
-            mb="26px"
-            py="15px"
-            h="50px"
-            borderRadius="16px"
-            bg={googleBg}
-            color={googleText}
-            fontWeight="500"
-            _hover={googleHover}
-            _active={googleActive}
-            _focus={googleActive}
-            onClick={googleSignIn}
-          >
-            <Icon as={FcGoogle} w="20px" h="20px" me="10px" />
-            Sign in with Google
-          </Button>
-          <Flex align="center" mb="25px">
-            <HSeparator />
-            <Text color="gray.400" mx="14px">
-              or
-            </Text>
-            <HSeparator />
-          </Flex>
           <FormControl>
             <FormLabel
               display="flex"
@@ -199,34 +174,6 @@ function SignIn() {
                 />
               </InputRightElement>
             </InputGroup>
-            <Flex justifyContent="space-between" align="center" mb="24px">
-              <FormControl display="flex" alignItems="center">
-                <Checkbox
-                  id="remember-login"
-                  colorScheme="brandScheme"
-                  me="10px"
-                />
-                <FormLabel
-                  htmlFor="remember-login"
-                  mb="0"
-                  fontWeight="normal"
-                  color={textColor}
-                  fontSize="sm"
-                >
-                  Keep me logged in
-                </FormLabel>
-              </FormControl>
-              <NavLink to="/auth/forgot-password">
-                <Text
-                  color={textColorBrand}
-                  fontSize="sm"
-                  w="124px"
-                  fontWeight="500"
-                >
-                  Forgot password?
-                </Text>
-              </NavLink>
-            </Flex>
             <Button
               fontSize="sm"
               variant="brand"
@@ -234,9 +181,9 @@ function SignIn() {
               w="100%"
               h="50"
               mb="24px"
-              onClick={handleSignIn}
+              onClick={handleSignUp}
             >
-              Sign In
+              Sign Up
             </Button>
           </FormControl>
           <Flex mb="24px">
@@ -252,15 +199,15 @@ function SignIn() {
             mt="0px"
           >
             <Text color={textColorDetails} fontWeight="400" fontSize="14px">
-              Not registered yet?
-              <NavLink to="/auth/sign-up">
+              Already registered?
+              <NavLink to="/auth/sign-in">
                 <Text
                   color={textColorBrand}
                   as="span"
                   ms="5px"
                   fontWeight="500"
                 >
-                  Create an Account
+                  Sign In
                 </Text>
               </NavLink>
             </Text>
@@ -271,4 +218,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignUp;

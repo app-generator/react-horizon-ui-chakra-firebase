@@ -3,6 +3,7 @@ import React from 'react';
 import {
   signInWithEmailAndPassword,
   signOut as firebaseSignOut,
+  createUserWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -34,8 +35,19 @@ export const ContextProvider = (props) => {
   const signIn = async (email, password) => {
     try {
       await signInWithEmailAndPassword(firebaseAuth, email, password);
+      return;
     } catch (err) {
       console.log(err.message);
+      return err.message;
+    }
+  };
+  const signUp = async (email, password) => {
+    try {
+      await createUserWithEmailAndPassword(firebaseAuth, email, password);
+      return;
+    } catch (err) {
+      console.log(err.message);
+      return err.message;
     }
   };
   const signOut = async () => {
@@ -59,6 +71,7 @@ export const ContextProvider = (props) => {
         isSignedIn,
         user,
         signIn,
+        signUp,
         signOut,
         googleSignIn,
       }}
