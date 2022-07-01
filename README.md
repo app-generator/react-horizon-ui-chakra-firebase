@@ -14,6 +14,8 @@ The product used a Firebase backend for the authentication flow: Social login vi
   - `SignIN/SignUP` via `user/password`
 - ✅ **Full-stack Ready** using a *Firebase** 
 
+<br />
+
 > Links
 
 - 👉 [React Horizon UI](https://react-horizon-firebase.appseed-srv1.com) - LIVE Demo
