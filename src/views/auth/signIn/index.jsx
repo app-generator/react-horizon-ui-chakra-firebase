@@ -69,8 +69,8 @@ function SignIn() {
     { bg: 'whiteAlpha.200' }
   );
   // states and functions
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
+  const [email, setEmail] = React.useState('');       // <-- Default values HERE: demo@gmail.com
+  const [password, setPassword] = React.useState(''); // <-- Default values HERE: 123456
   const [loginError, setLoginError] = React.useState('');
   const [show, setShow] = React.useState(false);
   const { signIn, googleSignIn } = React.useContext(AuthContext);
@@ -106,7 +106,7 @@ function SignIn() {
             fontWeight="400"
             fontSize="md"
           >
-            Enter your email and password to sign in!
+            Open-source Starter built with React and Firebase
           </Text>
         </Box>
         <Flex
