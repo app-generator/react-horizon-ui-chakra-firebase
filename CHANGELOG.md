@@ -1,4 +1,5 @@
 ## [1.1.0-enh1] 2022-07-01
+### Improvements
 
 - Added `Firebase` Support
   - `Social` login via `Google`
