@@ -1,4 +1,4 @@
-# React Horizon UI `Firebase`⚡️
+# [React Horizon UI](https://appseed.us/product/horizon-ui/firebase/) `Firebase`⚡️
 
 Designed for those who like modern UI elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, **React Horizon UI** is ready to help you create stunning websites and webapps.
 The product used a Firebase backend for the authentication flow: Social login via Google and the classic `user/password` auth flow.
@@ -106,4 +106,4 @@ This premium design powered by `Chakra UI` comes with many examples for pages li
 <br />
 
 ---
-React Horizon UI `Firebase` - Provided by Simmmple and **AppSeed [App Generator](https://appseed.us/generator)**.
+[React Horizon UI](https://appseed.us/product/horizon-ui/firebase/) `Firebase` - Provided by Simmmple and **AppSeed [App Generator](https://appseed.us/generator)**.
