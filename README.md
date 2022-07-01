@@ -87,4 +87,4 @@ All above settings are provided by the Firebase platform. For more information, 
 <br />
 
 ---
-React Horizon UI - Provided by Simmmple and **AppSeed [App Generator](https://appseed.us/generator)**.
+React Horizon UI `Firebase` - Provided by Simmmple and **AppSeed [App Generator](https://appseed.us/generator)**.
