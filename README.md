@@ -18,8 +18,10 @@ The product used a Firebase backend for the authentication flow: Social login vi
 
 > Links
 
-- 👉 [React Horizon UI](https://react-horizon-firebase.appseed-srv1.com) - LIVE Demo
+- 👉 [React Horizon Firebase](https://appseed.us/product/horizon-ui/firebase/) - `product page`
+- 👉 [React Horizon Firebase](https://react-horizon-firebase.appseed-srv1.com) - LIVE Demo
 - 👉 Free Support via Github (issues tracker) and [Discord](https://discord.gg/fZC6hup).
+- ✅ [PRO Version Available](#pro-version) - `enhanced UI` and more `features`
 
 <br />
 
@@ -83,6 +85,23 @@ All above settings are provided by the Firebase platform. For more information, 
 
 - [Firebase Fundamentals](https://firebase.google.com/docs/guides) - Learn how to get started fast 
 - [Manage Projects in Firebase](https://firebase.google.com/docs/projects/learn-more) - the basics
+
+<br /> 
+
+## PRO Version
+
+> For more components, pages and priority on support, feel free to take a look at this amazing starter:
+
+Designed for those who like modern UI elements and beautiful websites, Horizon UI is ready to help you create stunning websites and webapps.
+This premium design powered by `Chakra UI` comes with many examples for pages like NFTs Pages, Authentication Pages, Profile and so on. 
+
+- 👉 [React Horizon UI PRO](https://appseed.us/product/horizon-ui-pro/full-stack/) - Product Page
+  - ✅ `Enhanced UI` - more pages and components
+  - ✅ `Priority` on support
+
+<br >
+
+![React Horizon UI PRO - Full-Stack starter provided by AppSeed and Simmmple.](https://user-images.githubusercontent.com/51070104/175255148-7475cb47-0f63-48ee-a39d-7620beca6783.png)
 
 <br />
 
