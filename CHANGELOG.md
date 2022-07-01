@@ -1,3 +1,9 @@
+## [1.1.0-enh1] 2022-07-01
+
+- Added `Firebase` Support
+  - `Social` login via `Google`
+  - `SignIN/SignUP` via `user/password`
+
 ## [1.1.0] 2022-06-08
 
 🐛 Bugs solved:
