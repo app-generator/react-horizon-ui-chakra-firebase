@@ -9,10 +9,10 @@ The product used a Firebase backend for the authentication flow: Social login vi
 
 - ✅ Modern aesthetics UI design - Designed by *[Simmmple](https://simmmple.com/)*
 - ✅ Styled with `Chakra Ui`, `Dark-Mode`
+- ✅ **Full-stack Ready** via **Firebase** 
 - ✅ Authentication: 
   - Google Social Login
   - `SignIN/SignUP` via `user/password`
-- ✅ **Full-stack Ready** using a *Firebase** 
 
 <br />
 
